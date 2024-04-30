@@ -2,10 +2,12 @@
   "name": "react-memo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://opsuuu.github.io/react-ToDoList",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^6.1.1",
     "json-server": "^1.0.0-alpha.23",
     "prettier": "^3.2.5",
     "react": "^18.2.0",
@@ -21,7 +23,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prettier": "npx prettier . --write",
-    "server": "npx json-server db.json"
+    "server": "npx json-server db.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
